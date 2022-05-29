@@ -32,30 +32,41 @@ class _BorderedDropdownState extends State<BorderedDropdown> {
       width: widget.width,
       height: inputFieldHeight,
       child: DropdownButtonFormField<dynamic>(
+        iconEnabledColor: Colors.white,
+        dropdownColor: kPrimaryColor,
         decoration: InputDecoration(
             label: Text(
               widget.hint,
               style: const TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontFamily: FontFamily.BaiJamjureeMedium,
                   fontSize: 16),
             ),
+            labelStyle: TextStyle(color: Colors.white),
             contentPadding: EdgeInsetsDirectional.only(start: 20, end: 20),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(6),
+                borderSide: const BorderSide(
+                    color: Colors.white, width: inputBorderWidth)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(6),
+                borderSide: const BorderSide(
+                    color: Colors.white, width: inputBorderWidth)),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(6),
                 borderSide: const BorderSide(
-                    color: dropDownBorderColor, width: inputBorderWidth))),
+                    color: Colors.white, width: inputBorderWidth))),
         items: widget.list,
         hint: Text(
           widget.hint,
           style: const TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontFamily: FontFamily.BaiJamjureeMedium,
               fontSize: 16),
         ),
         onChanged: (val) {
           // setState(() {
-            widget.selectedValue = val;
+          widget.selectedValue = val;
           // });
           widget.onChanged(val);
         },

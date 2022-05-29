@@ -14,16 +14,18 @@ class Game {
 
   static List<DropdownMenuItem<int>> buildMenuItem(List<Game> games) {
     return games
-        .map((e) => DropdownMenuItem(
-              child: Text(
-                e.name,
-                style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: FontFamily.BaiJamjureeMedium,
-                    fontSize: 16),
-              ),
-              value: e.gameId,
-            ))
+        .map(
+          (e) => DropdownMenuItem(
+            child: Text(
+              e.name,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: FontFamily.BaiJamjureeMedium,
+                  fontSize: 16),
+            ),
+            value: e.gameId,
+          ),
+        )
         .toList();
   }
 }

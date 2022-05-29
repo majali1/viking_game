@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-const String apiUrl = 'http://192.168.1.105:3333/api/';
+const String apiUrl = 'http://172.20.10.2:3333/api/';
 
 const kPrimaryColor = Color(0xFF0C5774);
 const kPrimaryButtonColor = Color(0xFFAC3A4B);
-const dropDownBorderColor = Color(0xFF888888);
+const dropDownBorderColor = Color(0xFFFFFFFF);
 const uploadeImageColor = Color(0xFF3F9925);
 
 const inputBorderWidth = 1.0;
@@ -21,6 +21,7 @@ class SharedKeys {
   static const token = 'token';
   static const user = 'user';
   static const fcmToken = 'fcmToken';
+  static const sessionTime = 'sessionTime';
 }
 
 class PageRoutes {
@@ -29,4 +30,3 @@ class PageRoutes {
   static const loginScreen = 'loginScreen';
   static const setupScreen = 'setupScreen';
 }
-

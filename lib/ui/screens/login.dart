@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.of(context);
         Provider.of<AppData>(context, listen: false).updateUserInfo(user);
         Navigator.pushNamedAndRemoveUntil(
-            context, PageRoutes.homeScreen, (route) => false);
+            context, PageRoutes.setupScreen, (route) => false);
       } on CustomException catch (e) {
         setState(() {
           showCustomError = true;

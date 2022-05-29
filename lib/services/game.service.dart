@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:viking_game/models/game.dart';
 import 'package:viking_game/models/game_attribute.dart';
+import 'package:viking_game/models/game_session.dart';
 import 'package:viking_game/utilities/custom_exception.dart';
 import 'package:viking_game/utilities/http_helper.dart';
 
@@ -76,6 +77,16 @@ class GameService {
       final response = await HTTPHelper.deleteRequest(
           '$gameAPI/deleteGameAttribute/$gameId', null, {'index': index});
       return response['ok'] == 1;
+    } on CustomException catch (e) {
+      throw new CustomException(message: e.message, statusCode: e.statusCode);
+    }
+  }
+
+  static Future<GameSession> createGameSession(GameSession gameSession) async {
+    try {
+      final response = await HTTPHelper.postRequest(
+          '$gameAPI/createGameSession', gameSession);
+      return GameSession.fromJson(response);
     } on CustomException catch (e) {
       throw new CustomException(message: e.message, statusCode: e.statusCode);
     }

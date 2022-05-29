@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
           context, PageRoutes.loginScreen, (route) => false);
     } else {
       Navigator.pushNamedAndRemoveUntil(
-          context, PageRoutes.homeScreen, (route) => false);
+          context, PageRoutes.setupScreen, (route) => false);
     }
   }
 
