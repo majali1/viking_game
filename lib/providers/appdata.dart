@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:viking_game/models/game_scores.dart';
 import 'package:viking_game/models/game_session.dart';
+import 'package:viking_game/models/player.dart';
 import 'package:viking_game/models/vuser.dart';
 import 'package:viking_game/utilities/sharedpref.dart';
 
@@ -11,6 +14,22 @@ class AppData extends ChangeNotifier {
   VUser? user;
   int? selectedGame;
   GameSession? gameSession;
+
+  List<GameScore> gameScores = [];
+  late List<Player> players = [];
+
+
+  void initializePlayer(Player _player){
+    players.add(_player);
+    int scoreIndex = players.length - 1;
+    gameScores.add(new GameScore(index: scoreIndex, scores: [0]));
+    notifyListeners();
+  }
+
+  void removePlayer(int index){
+    players.removeAt(index);
+    notifyListeners();
+  }
 
   void setSelectedGame(int _selectedGame) {
     selectedGame = _selectedGame;

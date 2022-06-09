@@ -48,8 +48,9 @@ class _RightPanelState extends State<RightPanel> {
               ),
               Positioned(
                 top: 0,
+                right: 0,
                 child: ResultPanel(
-
+                  players: value.players,
                 ),
               ),
             ],

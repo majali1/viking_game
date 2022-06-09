@@ -56,6 +56,7 @@ class _LeftPanelState extends State<LeftPanel> {
     await Future.delayed(Duration(seconds: 10));
 
     _stopWatchTimer!.onExecute.add(StopWatchExecute.start);
+    initializePlayer(new Player(name: 'Player 1'));
   }
 
   Future<void> loadGames() async {
@@ -67,16 +68,17 @@ class _LeftPanelState extends State<LeftPanel> {
 
   void editPlayer(int index, String name) {
     players[index].name = name;
-    setState(() {
+    setState(() {});
+  }
 
-    });
+  void initializePlayer(Player _player) {
+    Provider.of<AppData>(context, listen: false).initializePlayer(_player);
   }
 
   @override
   void initState() {
     super.initState();
     loadGames();
-    players.add(new Player(name: 'Player 1'));
     initializeStopWatcher();
   }
 
@@ -95,9 +97,9 @@ class _LeftPanelState extends State<LeftPanel> {
                   orientation == Orientation.landscape) ||
               deviceType == DeviceType.web;
           return Container(
-            width: isWide ? 45.w : 20.w,
+            width: isWide ? 41.w : 20.w,
             color: kPrimaryColor,
-            padding: EdgeInsets.symmetric(horizontal: 43.47, vertical: 30.1),
+            padding: EdgeInsets.symmetric(horizontal: 20.47, vertical: 30.1),
             child: ListView(
               children: [
                 SvgPicture.asset(
@@ -199,15 +201,15 @@ class _LeftPanelState extends State<LeftPanel> {
                       minValue: 1,
                       step: 1,
                       onChanged: (val) async {
-                        if(players.length < val){
-                          players.add(new Player(name: 'Player $val'));
-                        } else {
-                          players.removeAt(val);
+                        if (value.players.length < val) {
+                          value.initializePlayer(
+                              new Player(name: 'Player $val'));
+                          // players.add(new Player(name: 'Player $val'));
+                        } else if (value.players.length > 1) {
+                          Provider.of<AppData>(context).removePlayer(val);
                         }
                         // Future.delayed(Duration(milliseconds: 500));
-                        setState(() {
-
-                        });
+                        setState(() {});
                       },
                     ),
                   ],
@@ -223,7 +225,7 @@ class _LeftPanelState extends State<LeftPanel> {
                   height: 10,
                 ),
                 PlayersList(
-                  players: players,
+                  players: value.players,
                   onEdit: (index, name) => editPlayer(index, name),
                 )
               ],

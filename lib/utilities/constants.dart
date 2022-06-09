@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const String apiUrl = 'http://172.20.10.2:3333/api/';
+const String apiUrl = 'http://192.168.88.221:3333/api/';
 
 const kPrimaryColor = Color(0xFF0C5774);
 const kPrimaryButtonColor = Color(0xFFAC3A4B);
