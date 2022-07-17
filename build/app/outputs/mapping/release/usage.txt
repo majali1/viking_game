@@ -390,13 +390,13 @@ androidx.core.app.ComponentActivity:
     private androidx.lifecycle.LifecycleRegistry mLifecycleRegistry
 kotlin.jvm.internal.ArrayIntIterator
 kotlin.coroutines.CombinedContext$Serialized
+kotlinx.coroutines.channels.ChannelsKt__ChannelsKt$sendBlocking$1
 kotlinx.coroutines.scheduling.TasksKt:
     public static final boolean isBlocking(kotlinx.coroutines.scheduling.Task)
     public static final java.lang.String DEFAULT_DISPATCHER_NAME
     public static final java.lang.String DEFAULT_SCHEDULER_NAME
     public static final int TASK_NON_BLOCKING
     public static final int TASK_PROBABLY_BLOCKING
-kotlinx.coroutines.channels.ChannelsKt__ChannelsKt$sendBlocking$1
 androidx.core.view.ScrollingView
 androidx.core.graphics.BlendModeUtils$1
 kotlin.jvm.JvmMultifileClass
@@ -566,11 +566,11 @@ kotlin.jvm.JvmClassMappingKt:
     public static final kotlin.reflect.KClass getAnnotationClass(java.lang.annotation.Annotation)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 androidx.core.R$layout
+androidx.lifecycle.Transformations$2
 androidx.lifecycle.ReflectiveGenericLifecycleObserver:
     void <init>(java.lang.Object)
-androidx.lifecycle.Transformations$2
-kotlin.BuilderInference
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7
+kotlin.BuilderInference
 kotlin.jdk7.AutoCloseableKt
 kotlinx.coroutines.internal.StackTraceRecoveryKt:
     public static final java.lang.Throwable recoverStackTrace(java.lang.Throwable,kotlin.coroutines.Continuation)
@@ -4516,10 +4516,10 @@ androidx.viewpager.widget.ViewPager$1
 io.flutter.plugin.common.ErrorLogResult
 androidx.core.app.ActivityOptionsCompat
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$6$1
-kotlinx.coroutines.flow.internal.ChannelLimitedFlowMerge
 io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager:
     public abstract void loadAssets(int,java.lang.String)
     public abstract void loadDartLibrary(int,java.lang.String)
+kotlinx.coroutines.flow.internal.ChannelLimitedFlowMerge
 androidx.customview.widget.FocusStrategy$BoundsAdapter
 kotlinx.coroutines.flow.ThrowingCollector
 kotlin.sequences.FilteringSequence$iterator$1
@@ -4966,6 +4966,7 @@ kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
 kotlinx.coroutines.flow.FlowKt__DistinctKt$defaultAreEquivalent$1
 kotlinx.coroutines.debug.internal.DebugProbesImpl$startWeakRefCleanerThread$1
 androidx.core.util.PatternsCompat
+kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$distinct$1
 kotlinx.coroutines.JobSupport:
     private final java.lang.Void loopOnState(kotlin.jvm.functions.Function1)
     private final synthetic void notifyHandlers(kotlinx.coroutines.NodeList,java.lang.Throwable)
@@ -4996,7 +4997,6 @@ kotlinx.coroutines.JobSupport:
     public final void selectAwaitCompletion$kotlinx_coroutines_core(kotlinx.coroutines.selects.SelectInstance,kotlin.jvm.functions.Function2)
     public synthetic void cancel()
     public kotlinx.coroutines.Job plus(kotlinx.coroutines.Job)
-kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$distinct$1
 kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
 kotlin.ranges.ClosedDoubleRange
 kotlinx.coroutines.channels.SendElementWithUndeliveredHandler
