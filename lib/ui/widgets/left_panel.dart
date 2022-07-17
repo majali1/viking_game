@@ -170,12 +170,11 @@ class _LeftPanelState extends State<LeftPanel> {
                   onChanged: (val) {
                     setState(
                       () {
-                        Provider.of<AppData>(context, listen: false)
-                            .setSelectedGame(val);
-
                         selectedGameId = games
                             .firstWhere((element) => element.gameId == val)
                             .id;
+                        Provider.of<AppData>(context, listen: false)
+                            .setSelectedGame(val, selectedGameId!);
                         selectedEnumGameId = val;
                       },
                     );

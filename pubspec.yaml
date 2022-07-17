@@ -43,6 +43,7 @@ dependencies:
   rflutter_alert: ^2.0.4
   stop_watch_timer: ^1.4.0
   wakelock: ^0.6.1+2
+  
 
 flutter_icons:
   android: "launcher_icon"

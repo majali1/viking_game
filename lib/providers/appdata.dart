@@ -12,7 +12,9 @@ class AppData extends ChangeNotifier {
   }
 
   VUser? user;
-  int? selectedGame;
+  int? selectedGame = -1;
+  String? selectedGameId;
+
   GameSession? gameSession;
 
   List<GameScore> gameScores = [];
@@ -31,8 +33,14 @@ class AppData extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setSelectedGame(int _selectedGame) {
+  void setSelectedGame(int _selectedGame, String _selectedGameId) {
     selectedGame = _selectedGame;
+    selectedGameId = _selectedGameId;
+    notifyListeners();
+  }
+
+  void setSelectedGameId(String _id){
+    selectedGameId = _id;
     notifyListeners();
   }
 
