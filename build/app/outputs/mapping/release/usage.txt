@@ -566,11 +566,11 @@ kotlin.jvm.JvmClassMappingKt:
     public static final kotlin.reflect.KClass getAnnotationClass(java.lang.annotation.Annotation)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 androidx.core.R$layout
-androidx.lifecycle.Transformations$2
 androidx.lifecycle.ReflectiveGenericLifecycleObserver:
     void <init>(java.lang.Object)
-kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7
+androidx.lifecycle.Transformations$2
 kotlin.BuilderInference
+kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7
 kotlin.jdk7.AutoCloseableKt
 kotlinx.coroutines.internal.StackTraceRecoveryKt:
     public static final java.lang.Throwable recoverStackTrace(java.lang.Throwable,kotlin.coroutines.Continuation)
@@ -5419,8 +5419,8 @@ kotlin.LazyKt__LazyJVMKt:
     public void <init>()
 androidx.core.view.WindowInsetsCompat$Type$InsetsType
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$zip$1
-kotlin.random.XorWowRandom
 kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
+kotlin.random.XorWowRandom
 kotlin.jvm.internal.InlineMarker
 androidx.activity.R$drawable
 io.flutter.plugin.common.EventChannel
