@@ -566,9 +566,9 @@ kotlin.jvm.JvmClassMappingKt:
     public static final kotlin.reflect.KClass getAnnotationClass(java.lang.annotation.Annotation)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 androidx.core.R$layout
+androidx.lifecycle.Transformations$2
 androidx.lifecycle.ReflectiveGenericLifecycleObserver:
     void <init>(java.lang.Object)
-androidx.lifecycle.Transformations$2
 kotlin.BuilderInference
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7
 kotlin.jdk7.AutoCloseableKt
@@ -1320,8 +1320,8 @@ androidx.core.graphics.TypefaceCompatBaseImpl
 androidx.core.view.ViewCompat$NestedScrollType
 androidx.core.telephony.TelephonyManagerCompat$Api23Impl
 kotlinx.coroutines.flow.FlowKt__DistinctKt$defaultKeySelector$1
-kotlinx.coroutines.AwaitAll$AwaitAllNode
 kotlinx.coroutines.flow.SharedFlowImpl$WhenMappings
+kotlinx.coroutines.AwaitAll$AwaitAllNode
 kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$1
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineUnsafe$1$1
 androidx.fragment.app.FragmentManagerImpl$1
@@ -5419,8 +5419,8 @@ kotlin.LazyKt__LazyJVMKt:
     public void <init>()
 androidx.core.view.WindowInsetsCompat$Type$InsetsType
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$zip$1
-kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
 kotlin.random.XorWowRandom
+kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
 kotlin.jvm.internal.InlineMarker
 androidx.activity.R$drawable
 io.flutter.plugin.common.EventChannel
@@ -7456,8 +7456,8 @@ androidx.core.view.MenuItemCompat$1
 androidx.core.content.pm.ShortcutManagerCompat$ShortcutMatchFlags
 kotlinx.coroutines.internal.ArrayQueue:
     public final void clear()
-androidx.core.location.LocationManagerCompat$GpsStatusTransport$3
 androidx.core.provider.RequestExecutor$DefaultThreadFactory$ProcessPriorityThread
+androidx.core.location.LocationManagerCompat$GpsStatusTransport$3
 androidx.core.provider.RequestExecutor$ReplyRunnable
 kotlin.sequences.TakeWhileSequence$iterator$1
 kotlin.internal.PureReifiable
