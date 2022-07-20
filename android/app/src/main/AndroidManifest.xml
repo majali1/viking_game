@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.viking_game">
+    package="com.cryptonic-art.viking_game">
    <application
         android:label="viking_game"
         android:name="${applicationName}"

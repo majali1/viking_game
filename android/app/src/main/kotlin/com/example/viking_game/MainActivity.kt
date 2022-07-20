@@ -1,4 +1,4 @@
-package com.example.viking_game
+package com.cryptonic-art.viking_game
 
 import io.flutter.embedding.android.FlutterActivity
 
