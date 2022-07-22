@@ -1,4 +1,4 @@
-package com.cryptonic-art.viking_game
+package com.cryptonicart.viking_game
 
 import io.flutter.embedding.android.FlutterActivity
 
